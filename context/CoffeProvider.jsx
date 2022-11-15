@@ -88,7 +88,7 @@ const CoffeProvider = ({children}) => {
         e.preventDefault()
 
         try {
-            await axios.post('/api/ordenes', { pedido, nombre, total, fecha: Date.now().toString() })
+            await axios.post('/api/ordenes', { pedido, nombre, total, fecha: Date.now().toString().toLocaleDateString('es-ES', { weekday:"long", year:"numeric", month:"short", day:"numeric"})  })
             
             setCategoriaActual(categorias[0])
             setPedido([])        
