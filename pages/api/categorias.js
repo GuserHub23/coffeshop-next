@@ -9,5 +9,5 @@ export default async function handler(req, res) {
       productos: true
     }
   })
-  res.json(categorias)
+  res.status(200).json(categorias)
 }
