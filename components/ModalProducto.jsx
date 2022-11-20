@@ -44,8 +44,8 @@ const ModalProducto = () => {
                 </button>
             </div>
 
-            <div className='md:flex gap-10'>
-                <div className='md:w-1/3'>
+            <div className='md:flex gap-10 md:text-start text-center'>
+                <div className='md:w-1/3 flex justify-center'>
                     <Image 
                         width={200}
                         height={300}
@@ -62,7 +62,7 @@ const ModalProducto = () => {
                         {formatearDinero(precio)}
                     </p>
 
-                    <div className='mt-5 flex gap-4'>
+                    <div className='mt-5 flex gap-4 md:justify-start justify-center'>
                         <button
                             type='button'
                             onClick={() => {
